@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --inspect",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -31,7 +31,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "redis": "^5.11.0",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "workflow": "^4.2.4"
   },
   "devDependencies": {
     "@types/node": "^25.3.2",
