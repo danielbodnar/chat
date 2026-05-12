@@ -638,6 +638,9 @@ importers:
       '@chat-adapter/gchat':
         specifier: workspace:*
         version: link:../adapter-gchat
+      '@chat-adapter/github':
+        specifier: workspace:*
+        version: link:../adapter-github
       '@chat-adapter/messenger':
         specifier: workspace:*
         version: link:../adapter-messenger
@@ -664,6 +667,9 @@ importers:
         version: 0.37.120
     devDependencies:
       '@emulators/core':
+        specifier: ^0.5.0
+        version: 0.5.0
+      '@emulators/github':
         specifier: ^0.5.0
         version: 0.5.0
       '@emulators/slack':
@@ -1169,6 +1175,9 @@ packages:
 
   '@emulators/core@0.5.0':
     resolution: {integrity: sha512-GCWKlCJCso4ZlVtnfLHY+k2M+SOhtE8NyZ+fkb51N2ZBhniH046tw46vJXCRQE9YjYGoaSrrpzAatcpov35wnQ==}
+
+  '@emulators/github@0.5.0':
+    resolution: {integrity: sha512-LgaEoFJca2gs1p19y3KbAyjhoWdM082jaV7P8CXOv8oS6SKtBDZlfrDi8Uv1ChkOFaQ0r+fv/JfltQSSjc8gjA==}
 
   '@emulators/slack@0.5.0':
     resolution: {integrity: sha512-PqacsHNQDKfgl1vA5e4waeGIoI0uhOr40+nos8cKX0S6YGEXF8vbrMriINlbC6I3GLwSlfO23P1gt6L3AIfHDg==}
@@ -8529,6 +8538,11 @@ snapshots:
     dependencies:
       hono: 4.12.18
       jose: 6.2.3
+
+  '@emulators/github@0.5.0':
+    dependencies:
+      '@emulators/core': 0.5.0
+      hono: 4.12.18
 
   '@emulators/slack@0.5.0':
     dependencies:
